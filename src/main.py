@@ -7,7 +7,7 @@ def ejecutar_comando(texto):
 
     for keyword, action in commands.items():
         if keyword in cmd:
-            action()
+            action(cmd)
             return
 
     print("Comando no reconocido.")
