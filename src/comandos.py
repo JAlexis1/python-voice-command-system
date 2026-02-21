@@ -10,8 +10,13 @@ def mostrar_hora():
 def abrir_google():
     webbrowser.open("https://www.google.com")
 
+def salir():
+    print("Hasta luego, gracias por usar nuestro sistema de comandos por voz.")
+    exit()
+
 commands = {
     "hola": saludar,
     "hora": mostrar_hora,
-    "abrir google": abrir_google
+    "abrir google": abrir_google,
+    "salir": salir
 }
