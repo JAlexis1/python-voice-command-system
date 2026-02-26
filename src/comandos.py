@@ -39,7 +39,7 @@ def abrir_aplicacion_sistema(texto: str):
         "terminal": {
             "Windows": "start cmd",
             "Darwin": "open -a Terminal",
-            "Linux": "gnome-terminal || xterm || konsole || terminal"
+            "Linux": "gnome-terminal || xterm || konsole || term😃inal"
         }
     }
 
@@ -55,10 +55,15 @@ def abrir_aplicacion_sistema(texto: str):
 
     print("Aplicación no soportada en este sistema operativo.")
 
+def precio_dolar(texto):
+    url = "https://www.dolar-colombia.com/"
+    webbrowser.open(url)
+
 commands = {
     "hola": saludar,
     "hora": mostrar_hora,
     "abrir google": abrir_google,
     "busca en youtube": buscar_youtube,
-    "abrir": abrir_aplicacion_sistema
+    "abrir": abrir_aplicacion_sistema,
+    "precio dólar": precio_dolar,
 }
