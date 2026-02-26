@@ -39,7 +39,7 @@ def abrir_aplicacion_sistema(texto: str):
         "terminal": {
             "Windows": "start cmd",
             "Darwin": "open -a Terminal",
-            "Linux": "gnome-terminal || xterm || konsole || term😃inal"
+            "Linux": "gnome-terminal || xterm || konsole || terminal"
         }
     }
 
